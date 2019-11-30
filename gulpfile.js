@@ -28,6 +28,7 @@ function dependencies() {
     return src( dependencies )
         .pipe(dest('out'));
 }
+
 function buildJS() {
     return src('src/js/**/*.js')
         .pipe(concat('app.js'))
